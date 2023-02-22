@@ -21,7 +21,47 @@ body {
     background: var(--body-color);
     transition: background 2.6s;
 }
+/*intro////////////////////////////////////////////////////////////////////*/
 
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--nav-color);
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/*intro////////////////////////////////////////////////////////////////////*/
 
 /*navegation bar////////////////////*/
 nav{
@@ -35,7 +75,7 @@ nav{
     z-index: 100;
 }
 
-.logo{
+.logo-img{
     width: 160px;
     margin-right: 45px;
 }
@@ -56,10 +96,10 @@ nav{
 
 .nav-left ul li img{
     margin: 0 15px;
-    --s: 28px;   /* the size of the image */
-    --b: 4px;     /* the border thickness*/
-    --g: 7px;    /* the gap */
-    --c: rgb(21, 61, 90); /* the color */
+    --s: 28px;   
+    --b: 4px;     
+    --g: 7px;    
+    --c: rgb(21, 61, 90); 
   
     width: var(--s);
     aspect-ratio: 1;
