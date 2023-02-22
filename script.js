@@ -40,68 +40,39 @@ function getUser(){
     }); 
 
     location.reload ;
-
-    // $.ajax({
-    //     url: "http://localhost:5044/texto-post", 
-    //     method: "get",
-    //     dataType: "json",
-    //     success: function(users) {
-    //       $(users).each(i => {
-    //         console.log(JSON.parse(users[i]));
-    //          $(".post-container").after(`
-    //         <div class="post-row">
-    //             <div class="user-profile">
-    //                 <img src="images/ProfilePic.jpg" alt="">
-    //                 <div>  
-    //                     <p>User</p>
-    //                     <span class="clocks">20 de Janeiro 2023, 14:00</span>
-    //                 </div>
-    //             </div>
-    //             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-    //         </div>
-
-    //         <p class="post-text">Inscrevasse <span>@MLCSantos</span>para mais tutoriais
-    //         <a href="#">#Dvelopment</a></p>
-    //         <p>${JSON.parse(users[i]).text}</p>
-    //         <div class="post-row">
-    //             <div class="activity-icons">
-    //                 <div><img src="images/like-blue.png">120</div>
-    //                 <div><img src="images/comments.png">45</div>
-    //                 <div><img src="images/search.png">100</div>
-    //             </div>
-    //             <div class="post-profile-icon">
-    //                 <img src="images/ProfilePic.jpg"><i class="fa-sharp fa-solid fa-caret-down"></i>
-    //             </div>
-    //         </div>
-
-    //          `)
-    //       });
-    //     },
-    //   }); 
-
-    
+  
 }
 
+// LOGO INTRO
 
+let intro = document.querySelector('.intro');
+let logo = document.querySelector('.logo-header');
+let logoSpan = document.querySelectorAll('.logo');
 
-// const $post = document.querySelector('form')
-// console.log($post)
+window.addEventListener('DOMContentLoaded', ()=> {
 
-// $post.addEventListener('submit', function criaPostContrller(infosEvento){
-//     infosEvento.preventDefault();
-//     console.log("Estamos criando")
-//     const $campoCriaPost = document.querySelector('a[id=extpost]') 
-//     const $listaDePost = document.querySelector('.post-container')
+    setTimeout(()=>{
 
-//      console.log($listaDePost)
-    
-//       $listaDePost.insertAdjacentHTML('afterbegin', '<div class="post-container"></div>')
-    
-// });
+        logoSpan.forEach((span, idx)=>{
+            setTimeout(()=>{
+                span.classList.add('active');
+            }, (idx + 1) * 400)
+        })
 
-//function criaPostContrller(infosEvento){
-///    infosEvento.preventDefault();
-//    console.log("Estamos criando")
-//    const $campoCriaPost = document.querySelector('textarea[id=Publisher]') 
- //   const $listaDePost = document.querySelector('.post-container')
-//}
+        setTimeout(()=>{
+
+            logoSpan.forEach((span, idx) =>{
+
+                setTimeout(()=>{
+                    span.classList.remove('active');
+                    span.classList.add('fade'); 
+                },(idx + 1) * 50)
+            })
+        },2000)
+
+        setTimeout(()=>{
+            intro.style.top = '-100vh';
+        },2300)
+
+    })
+})
