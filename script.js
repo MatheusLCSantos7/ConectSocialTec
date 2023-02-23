@@ -1,8 +1,11 @@
 var settingsMenu = document.querySelector(".settings-menu");
 var darkBtn = document.getElementById("dark-btn");
 
-function settingsMenuTogle(){
-    settingsMenu.classList.toggle("settings-menu-height");
+function settingsMenuAdd(){
+    settingsMenu.classList.add("settings-menu-height");
+}
+function settingsMenuRemove(){
+    settingsMenu.classList.remove("settings-menu-height");
 }
 
 darkBtn.onclick = function(){
