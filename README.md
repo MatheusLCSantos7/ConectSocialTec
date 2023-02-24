@@ -1,4 +1,4 @@
-# SocielBookProject
+# SocialBookProject
 
 Bem vindo ao SocialBookProject
 
