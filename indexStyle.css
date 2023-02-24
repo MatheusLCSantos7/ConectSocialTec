@@ -7,22 +7,22 @@
 
 :root{
     --body-color:#ffffff;
-    --intro-color:#217d87;
-    --nav-color:linear-gradient(180deg, rgba(153,255,255,1) 0%, rgba(174,255,255,1) 15%, rgba(255,255,255,1) 100%);
-    --bg-color:#d4fafa;
+    --intro-color:#1BE9E6;
+    --nav-color:#DCDEE0;
+    --bg-color:#DCDEE0;
     --nav-img-color:#217d8763;
     --txt-color:#030303;
     --iten-hover-color:2px 2px 8px 2px rgba(0, 0, 0, 0.233);
 }
 
 .dark-theme{
-    --body-color:rgb(18, 18, 18);
+    --body-color:#030303;
     --intro-color:rgb(18, 18, 18);
-    --nav-color:#030303;
-    --bg-color:#030303;
+    --nav-color:rgb(18, 18, 18);
+    --bg-color:rgb(18, 18, 18);
     --nav-img-color:rgba(0, 0, 0, 0.527);
     --txt-color:#f0ffff;
-    --iten-hover-color:2px 2px 8px 2px rgba(255, 255, 255, 0.233);
+    --iten-hover-color:2px 2px 8px 2px rgba(255, 255, 255, 0.062);
 }
 
 body {
@@ -98,6 +98,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: var( --iten-hover-color);
 }
 
 .logo-img{
@@ -140,10 +141,11 @@ margin: 0 10px;
 }
 .nav-left ul li a:hover{
     background: var(--bg-color);
+    box-shadow: var(--iten-hover-color);
 }
 
 .nav-left ul li:hover{
-    transform:  translateY(10px);
+    transform:  translateY(5px);
 }
 
 
