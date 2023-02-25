@@ -99,6 +99,7 @@ nav{
     top: 0;
     z-index: 100;
     box-shadow: var( --iten-hover-color);
+    min-width: 100vw;
 }
 
 .logo-img{
@@ -106,9 +107,6 @@ nav{
     margin-right: 20px;
 }
 
-.logo-img{
-    background: radial-gradient();
-}
 
 .nav-right{
     display: flex;
@@ -293,6 +291,7 @@ margin: 0 10px;
     display: flex;
     justify-content: space-between;
     padding: 2vh;
+    min-height: 100vh;
 }
 .left-sidebar{
     flex-basis: 20%;
@@ -300,6 +299,7 @@ margin: 0 10px;
     top: 70px;
     align-items: flex-start;
     height: 100vh;
+    min-height: 100vh;
 }
 .right-sidebar{
     flex-basis: 25%;
@@ -310,9 +310,11 @@ margin: 0 10px;
     border-radius: 4px;
     background: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    min-height: 100vh;
 }
 .main-form{
     flex-basis: 47%;
+    min-height: 100vh;
 }
 /*Corpo principal////////////////////*/
 
@@ -746,7 +748,196 @@ margin: 0 10px;
     font-size: 13px;
 }
                     /*footer*/
-/*///////////////////*/                    
+/*///////////////////*/              
+
+
+
+/*TESTES                                  */
+
+.teste img{
+    display: none;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*TESTES                                  */
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+
+
 /*Conteudo da parte CENTRAL////////////////////*/
 
 
+@media screen and (max-width: 414px) {
+    .intro{
+        width: 100vw;
+
+    }
+    #logo-img-1{
+        width: 90px;
+        margin-top: 3px;
+    }
+    #logo-img-2{
+        width: 70px;
+        margin-top: 3px;
+    }
+    #logo-img-3{
+        width: 40px;
+        margin-top: 3px;
+    }
+
+
+    nav {
+        padding: 0 !important;
+        flex-direction: column;
+        width: 100vw;
+      }
+
+    .nav-left{
+        display: flex;
+        justify-content: center;
+        width: 10vw;
+    }
+    .nav-left ul{
+        width: 95vw;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+
+    }
+    .logo-img{
+        display: none;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        order: -1;
+    }
+    .search-box{
+        background: #efefef;
+        width: 50vw;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .main-content{
+        width: 100vw;
+    }
+    .main-form{
+        flex-basis: 0;
+        position: relative;
+        min-height: 270vh;
+        order: -1;
+        width: 100vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 96vw;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .story-gallery{
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        justify-content: space-around;
+    }
+    .story img{
+        width: 7vw;
+    }
+
+    .write-post-container{
+        width: 96vw;
+        border-radius: 10px;
+        margin: 2vh 2vw;
+        box-shadow: rgba(0, 0, 0, 0.37) 1.95px 1.95px 2.6px;
+
+    }
+
+    .add-post-links{
+        display: flex;
+        margin-top: 1vh;
+    }
+    .post-input-container{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .add-post-links a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: var(--txt-color);
+        margin-right: 0;
+        font-size: 10px;
+    }
+    .add-post-links button {
+        width: 25vw;
+    }
+    .post-container{
+        width: 94vw;
+        padding: 20px;
+        margin: 3vh 3vw;
+        box-shadow: rgba(0, 0, 0, 0.37) 1.95px 1.95px 2.6px;
+    }
+
+
+    .teste{
+        display: block;
+    }
+
+
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+/*FAZENDO BOTAO Q SAI O LEFT BAR*/
+
+
+
+
+    .left-sidebar{
+        display: flex;
+        flex-basis: 0;
+        top: 0;
+        position: relative;
+        width: 80vw;
+        height: 60vw;
+        right: 10vw;
+        left: 10vw;
+        min-height: 0;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .left-sidebar-height{
+        min-height: 60vw;
+    }
+    
+    .imp-links {
+    width: 50%;
+    }
+    .shortcut-links {
+    width: 50%;
+    }
+
+
+
+
+    .right-sidebar{
+        flex-basis: 0;
+        position: relative;
+        width: 50vw;
+        height: 40vh;
+        top: 0;
+        order: 1;
+    }
+
+
+    
+}
