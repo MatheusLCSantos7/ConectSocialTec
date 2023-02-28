@@ -1,7 +1,6 @@
 # ConectSocialTec
 
-Bem vindo ao SocialBookProject
-https://vercel.com/matheuslcsantos7/sociel-book-project
+
 
 Olá e bem-vindo ao SocialConecTec, uma rede social com propósito de promover a socialização de portifólios entre desenvolvedores para se ajudar na buscar pela vaga no mercado de trabalho
 
@@ -31,7 +30,7 @@ O projeto se inica em uma tela de Login, e como ainda esta em construção não 
 Claro que não se esqueça de colocar seus dados e fazer algumas alterações para ser originalmente seu e com suas marcas, afinal ninguem começa realmente do 0 certo?
 Todo projeto nasce de uma inspiração, mesmo que seja imaterial ou visual, e novamente digo que caso precise de ajuda estarei a disposição.
 
-Você pode [baixá-lo](https://github.com/MatheusLCSantos7/SocialBookProject/files/10852064/MLCSite.zip) clicando em `baixá-lo`! ou acessa-lo por [aqui](https://vercel.com/matheuslcsantos7/sociel-book-project)
+Você pode [baixá-lo](https://github.com/MatheusLCSantos7/SocialBookProject/files/10852064/MLCSite.zip) clicando em `baixá-lo`! ou acessa-lo por [aqui](https://conect-social-tec.vercel.app/)
 
 
 <hr>
