@@ -4,30 +4,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginPage</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>SocialBookPost</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="_midias.scss">
+    <script src="https://kit.fontawesome.com/2447eaddb7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Welcome</h1>
-            <img src="intro-animation.svg" class="left-login-img" alt="">
+
+<!--Intro-->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo"><img src="images/intro-logo-1.png" alt="logo" id="logo-img-1"></span>
+            <span class="logo"><img src="images/intro-logo-2.png" alt="logo" id="logo-img-2"></span>
+            <span class="logo"><img src="images/intro-logo-3.png" alt="logo" id="logo-img-3"></span>
+        </h1>
+    </div>
+<!--Intro-->
+
+<!--Barra de navegação-->
+    <nav> 
+        <div class="nav-left">
+                <img src="images/logoCST.png" alt="logo" class="logo-img">
+                <ul>
+                    <li><a href="https://sociel-book-project.vercel.app/"><span class="icon"><i class="fa-solid fa-house-user"></i></span><span class="text">HOME</span></a></li>
+                    <li><a href="#"><span class="icon"><i class="fa-solid fa-code"></i></span><span class="text">SERVIÇOS</span></i></a></li>
+                    <li><a href="#"><span class="icon"><i class="fa-brands fa-instagram"></i></span><span class="text">CONTATOS</span></a></li>
+                </ul>
         </div>
-        <div class="right-login">
-            <div class="card-login">
-                <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" id="Usuário">
+        <div class="nav-right">
+
+                <div class="search-box">
+                    <img src="images/search.png">
+                    <input type="text" name="" id="" placeholder="Search">
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="Senha">
+
+                <div class="nav-user-icon online" onmouseover="settingsMenuAdd()" onmouseout="settingsMenuRemove()">
+                    <img src="images/ProfilePic.jpg">
                 </div>
-                <a href="CSTech/index.html"><button class="btn-login">Login</button></a>
+        </div>
+
+        <!--Opções menu-->
+        <div class="settings-menu" onmouseover="settingsMenuAdd()" onmouseout="settingsMenuRemove()" >
+            
+            <!--Botão de mudãnça de cor-->
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <!--Botão de mudãnça de cor-->
+
+            <div class="setting-menu-inner">    
+                <div class="user-profile">
+                    <img src="images/ProfilePic.jpg" alt="">
+                    <div>  
+                        <p>Matheus Santos</p>
+                        <a href="#">Veja seu Perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>  
+                        <p>Feedback</p>
+                        <a href="#">Nos ajude a melhorar nossa progressão</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Opções e privacidade <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Ajudas e Suporte<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display e acessibilidade<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="../index.html">Sair<img src="images/arrow.png" width="10px"></a>
+                </div>
             </div>
         </div>
+        <!--Opções menu-->
+
+    </nav>
+<!--Barra de navegação-->
+
+<!--Body Container principal-->
+<script src="./plugin/jquery.min.js"></script>
+    <div class="container">
+    <!--Parte esquerda do corpo-->
+            <div class="left-sidebar">
+                <div class="imp-links">
+                    <a href="CV Matheus Santos.pdf"><img src="images/CV.svg" alt=""></i>Download CV</a>
+                    <a href="https://www.linkedin.com/in/matheus-leonardo-c-santos-537814223/"><img src="images/linkedin.svg">LINKEDIN</a>
+                    <a href="https://github.com/MatheusLCSantos7"><img src="images/github.svg">GITHUB</a>
+                    <a href="https://stackoverflow.com/users/18105399/matheus-lcsantos"><img src="images/stack-overflow.svg">STACKOF</a>
+                    <a href="https://github.com/MatheusLCSantos7/SocialBookProject"><img src="images/gitbranch.svg">Repositório...</a>
+                </div>
+                <div class="shortcut-links">
+                    <p>Atalhos</p>
+                    <a href="https://www.linkedin.com/in/matheus-leonardo-santos-537814223/"><img src="images/shortcut-1.svg"></a>
+                    <a href="https://github.com/MatheusLCSantos7?tab=repositories"><img src="images/shortcut-2.svg"></a>
+                    <a href="mailto:matheuslcsantosnh@gmail.com"><img src="images/shortcut-3.svg"></a>
+                    <a href="https://landing-page-azure-ten.vercel.app/"><img src="images/shortcut-2.svg"></a>
+                </div>
+            </div>
+    <!--Parte esquerda do corpo-->
+
+    <!--Corpo principal -->
+    <form class="main-form"> 
+        <div class="main-content">
+
+        <!--Storys-->
+                    <div class="story-gallery">
+                            <div class="story story1">
+                                <img src="images/upload.png" alt="">
+                                <p>Postar story</p>
+                            </div>
+
+                            <div class="story story2">
+                                <img src="images/member-1.png" alt="">
+                                <p>Pollyanna</p>
+                            </div>
+
+                            <div class="story story3">
+                                <img src="images/member-2.png" alt="">
+                                <p>Thomas</p>
+                            </div>
+
+                            <div class="story story4">
+                                <img src="images/member-3.png" alt="">
+                                <p>Dayse</p>
+                            </div>
+                            <div class="story story5">
+                                <img src="images/member-4.png" alt="">
+                                <p>Otto</p>
+                            </div>
+                    </div>
+        <!--Storys-->
+
+
+        <!--Publicações-->
+                
+                    <div class="write-post-container">
+                                <div class="user-profile">
+                                    <img src="images/ProfilePic.jpg" alt="">
+                                    <div>  
+                                        <p>Matheus Santos</p>
+                                        <small>Public <i class="fas fa-caret-down"></i></small>
+                                    </div>
+                                </div>
+                            <div class="post-input-container">
+                                <textarea rows="3" placeholder="O que você está pensando, Matheus?" id="Publisher"></textarea>
+                                <div class="add-post-links">
+                                    <a href="#"><img src="images/live-video.png">Live Video</a>
+                                    <a href="#"><img src="images/photo.png">Fotos/Video</a>
+                                    <a href="#"><img src="images/feeling.png" id="extpost">O que você esta sentindo</a>
+                                    <button name="botaoCriaPost" onclick="getUser()" type="submit">Post</button>
+                                </div>
+                            </div>
+                    </div>
+                
+                    
+                
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/ProfilePic.jpg" alt="">
+                                <div>  
+                                    <p>Matheus Santos</p>
+                                    <span class="clocks">20 de Janeiro 2023, 14:00</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+
+                        <p class="post-text">Bem vindo ao meu portifólio(<span>@MLCSantos</span>) este post vem com objetivo
+                        de apresentar me portifólio pessoal, com contatos, soft e hard skills e conhecimentos adquiridos.
+                        <a href="#">#Dvelopment</a></p>
+                        <img src="images/feed-image-1.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png">120</div>
+                                <div><img src="images/comments.png">45</div>
+                                <div><img src="images/search.png">100</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/ProfilePic.jpg"><i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="images/ProfilePic.jpg" alt="">
+                                <div>  
+                                    <p>Matheus Santos</p>
+                                    <span class="clocks">20 de Janeiro 2023, 14:00</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+
+                        <p class="post-text">Bem vindo ao projeto(<span>MLogisCs</span>)O MLogistCS é um software de 
+                        gestão de logística automatiza a gestão das operações de entrega e estoque, aumentando a eficiência,
+                        precisão e satisfação do cliente. Reduz custos logísticos e fornece visibilidade atualizada para os 
+                        funcionários, facilitando a tomada de decisões e solução de problemas. Em resumo, é uma ferramenta
+                        importante para melhorar a eficiência operacional e a satisfação do cliente pelo seu efeito na agilidade 
+                        dos processos internos da empresa.
+                        <a href="#">#Dvelopment</a></p>
+                        <img src="images/feed-image-2.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="images/like-blue.png">120</div>
+                                <div><img src="images/comments.png">45</div>
+                                <div><img src="images/search.png">100</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/ProfilePic.jpg"><i class="fa-sharp fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+            <button type="button" class="load-more-btn">Mostrar mais</button>
+
+        <!--Publicações-->
+        </div>
+    </form>
+
+    <!--Corpo principal -->
+
+    <!--Parte da direita do corpo-->
+            <div class="right-sidebar">
+
+                <div class="sidebar-title">
+                    <h4>Eventos</h4>
+                    <a href="#">Ver tudo</a>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>25</h3>
+                        <span>Janeiro</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>3 Etapa processo</h4>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i>Laura</p>
+                        <a href="https://www.google.com.br/maps/preview">Mais informações</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>02</h3>
+                        <span>Fevereiro</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Volta as aulas</h4>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i>Cotemig</p>
+                        <a href="https://www.cotemig.com.br/">Mais informações</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-title">
+                    <h4>Propagandas</h4>
+                    <a href="#">Fechar</a>
+                </div>
+                <a href="https://www.meta3group.com.br/facaParte" ><img src="images/advertisement.png" class="sidebar-ads"></a>
+                
+                <div class="sidebar-title">
+                    <h4>Conversas</h4>
+                    <a href="#">Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-1.png">
+                    </div>
+                    <p>Pollyanna Polles</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-2.png">
+                    </div>
+                    <p>Thomas Santos</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member-3.png">
+                    </div>
+                    <p>Dayse Santos</p>
+                </div>
+            </div>
     </div>
+    <!--Parte da direita do corpo-->
+    <div class="footer">
+        <p>@Copyright2021 - MLCSantos</p>
+    </div>
+<!--Body Container principal-->
+
+<script src="script.js"></script>
+<script>
+    $(document).ready(function(){
+         $.ajax({
+        url: "http://localhost:5044/texto-post", 
+        method: "get",
+        dataType: "json",
+        success: function(users) {
+          $(users).each(i => {
+            console.log(JSON.parse(users[i]));
+             $(".post-container").after(`
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/ProfilePic.jpg" alt="">
+                    <div>  
+                        <p>User</p>
+                        <span class="clocks">20 de Janeiro 2023, 14:00</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">Inscrevasse <span>@MLCSantos</span>para mais tutoriais
+            <a href="#">#Dvelopment</a></p>
+            <p>${JSON.parse(users[i]).text}</p>
+            <div class="post-row">
+                <div class="activity-icons">
+                    <div><img src="images/like-blue.png">120</div>
+                    <div><img src="images/comments.png">45</div>
+                    <div><img src="images/search.png">100</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/ProfilePic.jpg"><i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+
+             `)
+          });
+        },
+      })
+    }
+)
+</script>
 </body>
 </html>
