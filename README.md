@@ -1,5 +1,7 @@
 # ConectSocialTec
-
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
 
 
 Olá e bem-vindo ao SocialConecTec, uma rede social com propósito de promover a socialização de portifólios entre desenvolvedores para se ajudar na buscar pela vaga no mercado de trabalho
