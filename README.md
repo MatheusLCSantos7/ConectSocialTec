@@ -1,4 +1,4 @@
-# SocialBookProject
+# ConectSocialTec
 
 Bem vindo ao SocialBookProject
 https://vercel.com/matheuslcsantos7/sociel-book-project
