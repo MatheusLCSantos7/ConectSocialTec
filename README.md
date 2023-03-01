@@ -4,6 +4,11 @@
 </h4>
 
 
+
+https://user-images.githubusercontent.com/93961602/222216094-8748df5e-4e93-46b4-8f40-f9952a66fe37.mp4
+
+
+
 Olá e bem-vindo ao SocialConecTec, uma rede social com propósito de promover a socialização de portifólios entre desenvolvedores para se ajudar na buscar pela vaga no mercado de trabalho
 
 <h2 align="center">📁 Acesso ao projeto</h2>
